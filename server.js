@@ -9,3 +9,7 @@ app.listen(5050, function () {
 app.get("/", function (req, res) {
     res.sendFile(__dirname + "/index.html");
 });
+
+app.get("/snack.html", function (req, res) {
+    res.sendFile(__dirname + "/snack.html");
+});
