@@ -15,6 +15,12 @@
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
     </style>
+    <style type="text/css">
+        @FONT-FACE {
+            font-family: 'roboto';
+            src:url("fonts/roboto/Roboto-Black.ttf");
+        }
+    </style>
     <script type="text/javascript" defer src="js/clock.js"></script>
 </head>
 <body>
@@ -89,12 +95,11 @@
     </div>
 </nav>
 <main class="px-5 mx-5 text-center border-bottom border-1">
-    <img src="6cphoto/세종고전경.jpg" alt="sjhs" class="img-responsive center-block" style="width: 322px">
-    <h1 style="font-weight: bold">SJHS New Website</h1>
-    <p class="lead text-wrap">자랑스러운 대-세종고의 새 웹페이지입니다.<p>아래 버튼을 눌러 간식을 주문해보세요.</p>
-    <p class="lead">
-        <a href="snack.html" class="btn btn-lg btn-secondary fw-light text-dark border-black bg-white">여기로 간식 주문하기</a>
-    </p>
+    <img src="6cphoto/세종고전경.jpg" alt="sjhs" class="img-responsive mx-auto d-block" style="width: 322px">
+    <h1 style="font-family: roboto,sans-serif">SJHS New Website</h1>
+    <p class="lead border-bottom border-1">자랑스러운 대-세종고의 새 웹페이지입니다.<p>아래 버튼을 눌러 간식을 주문해보세요.</p>
+    <button type="button" class="btn btn-outline-dark btn-lg" onclick="location.href='snack.html'">여기로 간식 주문하기</button>
+    <p></p>
 </main>
 
 <main class="px-5 mx-5 text-center border-bottom border-1">
