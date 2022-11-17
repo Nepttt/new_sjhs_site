@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>세종고등학교</title>
     <link
@@ -14,12 +15,13 @@
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
     </style>
+    <script type="text/javascript" defer src="js/clock.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img src="/6cphoto/세종고로고.png"  alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            <img src="6cphoto/세종고로고.png"  alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
             세종고등학교
         </a>
         <button
@@ -42,8 +44,8 @@
                     <a
                             class="nav-link active"
                             aria-current="page"
-                            href="#"
-                    >Home</a
+                            href="index.html"
+                    >대문</a
                     >
                 </li>
                 <li class="nav-item">
@@ -59,11 +61,11 @@
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                     >
-                        Dropdown
+                        여러가지
                     </a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="snack.html">간식 주문하기</a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="#"
@@ -80,23 +82,27 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
+                    <a class="nav-link text-white" href="http://jcw87.github.io/c2-sans-fight">와샌주!!</a>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
-                <input
-                        class="form-control me-2"
-                        type="search"
-                        placeholder="Search"
-                        aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                    Search
-                </button>
-            </form>
         </div>
     </div>
 </nav>
+<main class="px-5 mx-5 text-center border-bottom border-1">
+    <img src="6cphoto/세종고전경.jpg" alt="sjhs" class="img-responsive" width="322">
+    <h1 style="font-weight: bold">SJHS New Website</h1>
+    <p class="lead text-wrap">자랑스러운 대-세종고의 새 웹페이지입니다.<p>아래 버튼을 눌러 간식을 주문해보세요.</p>
+    <p class="lead">
+        <a href="snack.html" class="btn btn-lg btn-secondary fw-light text-dark border-black bg-white">여기로 간식 주문하기</a>
+    </p>
+</main>
+
+<main class="px-5 mx-5 text-center border-bottom border-1">
+    <p class="lead">지금 시간은?</p>
+    <h2 id="clock" style="font-weight: bold"></h2>
+    <p></p>
+    <h2 id="remain_time" style="font-weight: normal"></h2>
+</main>
 
 <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
