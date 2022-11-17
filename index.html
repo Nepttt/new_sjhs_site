@@ -15,9 +15,11 @@
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
     </style>
-    <style type="text/css">
-        @FONT-FACE {
+    <style>
+        @font-face {
             font-family: 'roboto';
+            font-style: normal;
+            font-weight: 1000;
             src:url("fonts/roboto/Roboto-Black.ttf");
         }
     </style>
@@ -26,7 +28,7 @@
 <body>
 <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
             <img src="6cphoto/세종고로고.png"  alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
             세종고등학교
         </a>
@@ -47,46 +49,15 @@
         >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a
-                            class="nav-link active"
-                            aria-current="page"
-                            href="index.html"
-                    >대문</a
-                    >
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="http://comci.kr:4082/st"
                     >시간표</a
                     >
                 </li>
-                <li class="nav-item dropdown">
-                    <a
-                            class="nav-link dropdown-toggle"
-                            href="#"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
+                <li class="nav-item">
+                    <a class="nav-link" href="snack.html"
+                    >간식 주문하기</a
                     >
-                        여러가지
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a class="dropdown-item" href="snack.html">간식 주문하기</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#"
-                            >Another action</a
-                            >
-                        </li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li>
-                            <a class="dropdown-item" href="#"
-                            >Something else here</a
-                            >
-                        </li>
-                    </ul>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link text-white" href="http://jcw87.github.io/c2-sans-fight">와샌주!!</a>
                 </li>
@@ -96,7 +67,7 @@
 </nav>
 <main class="px-5 mx-5 text-center border-bottom border-1">
     <img src="6cphoto/세종고전경.jpg" alt="sjhs" class="img-responsive mx-auto d-block" style="width: 322px">
-    <h1 style="font-family: roboto,sans-serif">SJHS New Website</h1>
+    <h1 style="font-family: roboto, sans-serif">SJHS New Website</h1>
     <p class="lead border-bottom border-1">자랑스러운 대-세종고의 새 웹페이지입니다.<p>아래 버튼을 눌러 간식을 주문해보세요.</p>
     <button type="button" class="btn btn-outline-dark btn-lg" onclick="location.href='snack.html'">여기로 간식 주문하기</button>
     <p></p>
