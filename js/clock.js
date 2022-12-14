@@ -1,5 +1,5 @@
 const clock = document.querySelector("h2#clock");
-const remain_time = document.querySelector("h2#remain_time");
+const remain_time_2025 = document.querySelector("h2#remain_time_2025");
 
 function getClock() {
     const date = new Date();
@@ -12,19 +12,23 @@ function getClock() {
     clock.innerText = `${year}년 ${month}월 ${days}일 ${hours}:${minutes}:${seconds}`;
 }
 
-function diffDay() {
-    const ksat_time = new Date("2023-11-16");
+
+function diffDay_2025() {
+    const ksat_time = new Date("2024-11-14");
     const today_time = new Date();
 
     const diff = ksat_time - today_time;
 
     const diff_day = String(Math.floor(diff / (1000*60*60*24)));
+    const diff_hour = String(Math.floor((diff / (1000*60*60)) % 24));
+    const diff_min = String(Math.floor((diff / (1000*60)) % 60));
+    const diff_sec = String(Math.floor(diff / 1000 % 60));
 
-    remain_time.innerText = `2024학년도 수능까지 ${diff_day}일 남았습니다.`;
+    remain_time_2025.innerText = `2025학년도 수능까지 ${diff_day}일 남았습니다.`;
 }
 
-diffDay();
-setInterval(diffDay, 1000);
+diffDay_2025()
+setInterval(diffDay_2025, 1000);
 
 getClock();
 setInterval(getClock, 1000);
