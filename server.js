@@ -1,18 +1,14 @@
-const express = require("express");
-const mongoClient = require("mongodb").MongoClient;
+import express from "express";
+import {MongoClient as mongoClient} from "mongodb";
+import bodyParser from "body-parser";
 
-mongoClient.connect(
-    "mongodb+srv://root:root123@cluster0.yoalkiv.mongodb.net/?retryWrites=true&w=majority",
-    function (err, client) {
-        app.listen(5050, function () {
-            console.log("SJHS Website has started on port 5050");
-        });
-    }
-);
 
-const bodyParser = require("body-parser");
+
 const app = express();
-const { Db } = require("mongodb");
+
+app.listen({ port: 5050 }, () => {
+    console.log(`SJHS website has started on http://localhost:5050`);
+});
 
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
